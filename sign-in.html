@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .ok {
+            display: none;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body >
+    <div class="container-fluid" >
+        <div class="row  al">
+            <div class="col-8   "  >
+                <img  src="./logo_2.png" class="position-fixed " style="width: 700px; height:700px ;" />
+            </div>
+            <div class="col-4 mt-3  ">
+                <div class="">
+                    <div>
+                        <img src="./logo_2.png" class="w-50" />
+                    </div>
+                    <h2>Registrations</h2>
+                    <p>Plaese select your category</p>
+                    <select class="ok d-block form-select mt-3" id="choose" >
+                        <option value="no">chouse your statut</option>
+                        <option value="club">Club</option>
+                        <option value="rider">Redir</option>
+                        <option value="media">Media</option>
+                        <option value="company">Company</option>
+                    </select>
+                    <form method="post" action="#" class="ok " id="club">
+                        <h2>Registration Club</h2>
+                        <label>Nameof Admin</label><br />
+                        <input type="text" name="nadmin" class="form-control" /><br />
+                        <label>Nameof Club</label><br />
+                        <input type="text" name="nclub" class="form-control" /><br />
+                        <label>Email</label><br />
+                        <input type="email" name='email' class="form-control" /><br />
+                        <label>Confirm Email</label><br />
+                        <input type="email" name="cemail" class="form-control" /><br />
+                        <label>Password</label><br />
+                        <input type="password" name="pass" class="form-control" /><br />
+                        <label>Confirm Password</label><br />
+                        <input type="email" name="cpass" class="form-control" /><br />
+                        <label>Phone</label><br />
+                        <input type="tel" name="tel" class="form-control" /><br />
+                        <label>Country</label><br />
+                        <select class="form-select">
+                            <option>Moroc</option>
+                            <option>USA</option>
+                            <option>Uk</option>
+                            <option>India</option>
+                        </select><br />
+                        <label>City</label><br />
+                        <input type="text" name="city" class="form-control" /><br />
+                        <label>Address</label><br />
+                        <input type="text" name="address" class="form-control" /><br />
+                        <label>Description</label><br />
+                        <input type="text" name="descr" class="form-control" /><br />
+                        <label>Logo :</label><br />
+                        <input type="file" name="logo" class="form-control" /><br />
+                        <label>Recepisse definitif(PDF,DOC,ETC...)</label><br />
+                        <input type="file" name="rede" class="form-control" />
+                        <input type="button" value="submit" class=" btn btn-danger form-control mt-2"/>
+                    </form>
+                    <form method="post" action="#" class="ok mt-3" id="rider">
+                        <h2>Registration Rider</h2>
+                        <label>First Name</label><br />
+                        <input type="text" name="nadmin" class="form-control" /><br />
+                        <label>Family Name</label><br />
+                        <input type="text" name="nclub" class="form-control" /><br />
+                        <label>Email</label><br />
+                        <input type="email" name='email' class="form-control" /><br />
+                        <label>Confirm Email</label><br />
+                        <input type="email" name="cemail" class="form-control" /><br />
+                        <label>Confirm Password</label><br />
+                        <input type="email" name="cpass" class="form-control" /><br />
+                        <label>Password</label><br />
+                        <input type="password" name="pass" class="form-control" /><br />
+                        <label>Phone</label><br />
+                        <input type="tel" name="tel" class="form-control" /><br />
+                        <label>Country</label><br />
+                        <select class="form-select">
+                            <option>Moroc</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>India</option>
+                        </select><br />
+                        <label>City</label><br />
+                        <input type="text" name="city" class="form-control" /><br />
+                        <label>Address</label><br />
+                        <input type="text" name="address" class="form-control" /><br />
+                        <label>Description</label><br />
+                        <input type="text" name="descr" class="form-control" /><br />
+                        <label>Logo :</label><br />
+                        <input type="file" name="logo" class="form-control" /><br />
+                        <label>Photo Profile :</label><br />
+                        <input type='file' class="form-control" />
+                        <input type="button" value="submit" class="btn btn-danger form-control mt-2"/>
+                    </form>
+                    <form method="post" action="#" class="ok mt-3" id="media">
+                        <h2>Registration Media</h2>
+                        <label>Name of Admin</label><br />
+                        <input type="text" name="nadmin" class="form-control"/><br />
+                        <label>Name of Media</label><br />
+                        <input type="text" name="nclub" class="form-control"/><br />
+                        <label>Email</label><br />
+                        <input type="email" name='email'class="form-control" /><br />
+                        <label>Confirm Email</label><br />
+                        <input type="email" name="cemail" class="form-control"/><br />
+                        <label>Confirm Password</label><br />
+                        <input type="email" name="cpass" class="form-control"/><br />
+                        <label>Password</label><br />
+                        <input type="password" name="pass" class="form-control"/><br />
+                        <label>Phone</label><br />
+                        <input type="tel" name="tel" class="form-control"/><br />
+                        <label>Social Raison</label><br />
+                        <select  class="form-select">
+                            <option>SARL</option>
+                            <option>EURL</option>
+                            <option>SA</option>
+                            <option>SAAS</option>
+                        </select><br />
+                        <label>City</label><br />
+                        <input type="text" name="city" class="form-control"/><br />
+                        <label>Address</label><br />
+                        <input type="text" name="address" class="form-control"/><br />
+                        <label>Description</label><br />
+                        <input type="text" name="descr" class="form-control"/><br />
+                        <label>Logo :</label><br />
+                        <input type="file" name="logo" class="form-control"/><br />
+                        <label>Profissional Card(Recto/verso)</label><br />
+                        <input type="file" name="recto" class="form-control"/><br />
+                        <input type="file" name="verso" class="form-control"/>
+                        <input type="button" value="submit" class="btn btn-danger form-control mt-2"/>
+                    </form>
+                    <form method="post" action="#" class="ok mt-3" id="company">
+                        <h2>Registration Company</h2>
+                        <label>Name of Admin</label><br />
+                        <input type="text" name="nadmin" class="form-control"/><br />
+                        <label>Name of Media</label><br />
+                        <input type="text" name="nclub" class="form-control"/><br />
+                        <label>Email</label><br />
+                        <input type="email" name='email' class="form-control"/><br />
+                        <label>Confirm Email</label><br />
+                        <input type="email" name="cemail" class="form-control"/><br />
+                        <label>Confirm Password</label><br />
+                        <input type="email" name="cpass" class="form-control"/><br />
+                        <label>Password</label><br />
+                        <input type="password" name="pass" class="form-control"/><br />
+                        <label>Phone</label><br />
+                        <input type="tel" name="tel" class="form-control"/><br />
+                        <label>Social Raison</label><br />
+                        <select  class="form-select">
+                            <option>Morroc</option>
+                            <option>USA</option>
+                            <option>Uk</option>
+                            <option>India</option>
+                        </select><br />
+                        <label>City</label><br />
+                        <input type="text" name="city" class="form-control"/><br />
+                        <label>Address</label><br />
+                        <input type="text" name="address" class="form-control"/><br />
+                        <label>Pattente</label><br />
+                        <input type="text" name="patt" class="form-control"/><br />
+                        <label>Registre Commerce(RC)</label><br />
+                        <input type="text" name="rc" class="form-control"/><br />
+                        <label>Identifiant Fiscal(IF)</label><br />
+                        <input type="text" name="if" class="form-control"/><br />
+                        <label>Identifiant Commun of Entrprise(ICE)</label><br />
+                        <input type="text" name="ice" class="form-control"/><br />
+                        <label>La Caisse Nationale de Securite Sociale(CNSS)</label><br />
+                        <label>Description</label><br />
+                        <input type="text" name="patt" class="form-control"/><br />
+                        <input type="text" name="desc" /><br />
+                        <label>Logo :</label><br />
+                        <input type="file" name="logo" class="form-control"/><br />
+                        <label>Status (PDF,Image..)</label><br />
+                        <input type="file" name="recto" class="form-control"/>
+                        <input type="button" value="submit" class="btn btn-danger form-control mt-2"/>
+                    </form>
+                    <div>
+                        <p class="mt-3">
+                            Already have an account?
+                            <a href="./login.html">
+                                Sign in instead
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        #ok {
+            display: block;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container-fluid ">
+        <div class="  row w-100 h-100   ">
+            <div class="col-8  ">
+                <img src="./logo_2.png" class="position-fixed" style="height: 700px; width:700px ;" />
+            </div>
+            <div class="col-4  text-light  ">
+                <div class="mt-5">
+                    <img src="./logo_2.png" class="w-50 ms-5" />
+                </div>
+                <form method="post" action="#">
+                    <h3 class="text-black container-fluid">Welcome to KOLNA MOTARD! 👋</h3>
+                    <p class="text-black container-fluid">Please sign-in to your account and start the adventure</p>
+                    <form action="#" method="post" ></form>
+                    <label for="email" class="text-black">Email:</label>
+                    <input type="email" class="form-control" id="emaill" required/>
+                    <div class="d-flex justify-content-between">
+                        <label for="pass" class="text-black d-flex ">Passeword:</label>
+                        <a href="#" class="d-flex "   data-bs-toggle="modal" data-bs-target="#staticBackdrop">forget password?</a>
+                    </div>
+                    
+                    <input type="password" class="form-control" id="passl" required/>
+                    
+                    <input type="button" value="login" class="btn btn-primary container-fluid mt-3 "    />
+                    <div class=" text-black justify-content-center mt-5">
+                        New on our platform?<a href="./sign-in.html">Create an account</a>
+                    </div>
+                    
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+          
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>
